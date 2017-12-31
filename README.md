@@ -1,10 +1,5 @@
 # Gazebo for Dronekit and Dronekit SITL #
 
-[![Build Status](https://travis-ci.org/01org/gazebo-sitl.svg?branch=master)](https://travis-ci.org/01org/gazebo-sitl) <a href="https://scan.coverity.com/projects/01org-gazebo-sitl">
-  <img alt="Coverity Scan Build Status"
-       src="https://scan.coverity.com/projects/8893/badge.svg"/>
-</a>
-
 A ROS-independent Gazebo plugin for Dronekit and dronekit SITL.
 
 ## Requirements ##
