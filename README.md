@@ -1,11 +1,11 @@
-# Gazebo SITL Plugin #
+# Gazebo for Dronekit and Dronekit SITL #
 
 [![Build Status](https://travis-ci.org/01org/gazebo-sitl.svg?branch=master)](https://travis-ci.org/01org/gazebo-sitl) <a href="https://scan.coverity.com/projects/01org-gazebo-sitl">
   <img alt="Coverity Scan Build Status"
        src="https://scan.coverity.com/projects/8893/badge.svg"/>
 </a>
 
-A ROS-independent Gazebo plugin for Ardupilot's SITL.
+A ROS-independent Gazebo plugin for Dronekit and dronekit SITL.
 
 ## Requirements ##
     * Python 2.7+ (to generate mavlink headers)
@@ -60,16 +60,6 @@ once with:
     ```
     gazebo ./world/gzsitl_drone_target.world --verbose
     ```
-
-## Interaction ##
-
-The Plugin first detects if the vehicle being simulated on SITL is Landed or
-already Airborne.
- - If Landed, store the initial position as home, set flight mode as guided
-   and request take-off.
- - If Airborne, request home position, and keep the current flight mode.
-
-When Airborne, the vehicle follows the transparent sphere (target).
 
 ## Troubleshooting ##
 
